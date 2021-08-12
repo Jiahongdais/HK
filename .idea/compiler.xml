@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hk_web" />
+        <module name="hk_article" />
+        <module name="untitled" />
+        <module name="hk_config" />
+        <module name="hk_gathering" />
+        <module name="hk_qa" />
+        <module name="hk_manager" />
+        <module name="hk_base" />
+        <module name="hk_recruit" />
+        <module name="hk_base_test" />
+        <module name="hk_common" />
+        <module name="hk_eureka" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="untitled" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="hk_article" options="-parameters" />
+      <module name="hk_base" options="-parameters" />
+      <module name="hk_base_test" options="-parameters" />
+      <module name="hk_common" options="-parameters" />
+      <module name="hk_config" options="-parameters" />
+      <module name="hk_eureka" options="-parameters" />
+      <module name="hk_gathering" options="-parameters" />
+      <module name="hk_manager" options="-parameters" />
+      <module name="hk_qa" options="-parameters" />
+      <module name="hk_recruit" options="-parameters" />
+      <module name="hk_web" options="-parameters" />
+      <module name="untitled" options="-parameters" />
+    </option>
+  </component>
+</project>

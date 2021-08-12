@@ -1,0 +1,4 @@
+jwt:
+ config:
+    key: hkkj
+    ttl: 360000

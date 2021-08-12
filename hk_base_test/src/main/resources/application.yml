@@ -1,0 +1,28 @@
+server:
+  port: 9006
+spring:
+  application:
+    name: hk-base #指定服务名
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.1.6:3306/hk_base?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=UTC
+    username: root
+    password: 123456
+#配置MyBatisPlus
+mybatis-plus:
+  mapper-locations:
+    - classpath:mapper/*Mapper.xml
+  global-config:
+    db-config:
+      id-type: input
+    banner: true
+logging:
+  level:
+    com.hk.base.dao: info
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka
+  instance:
+    prefer-ip-address: true

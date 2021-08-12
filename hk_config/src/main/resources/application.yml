@@ -1,0 +1,25 @@
+server:
+  port: 12000
+spring:
+  application:
+    name: hk-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Jiahongdais/springcloud-config.git
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  rabbitmq:
+    host: 192.168.1.6
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka
+  instance:
+    prefer-ip-address: true
+management: #暴露触发消息总线的地址
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
